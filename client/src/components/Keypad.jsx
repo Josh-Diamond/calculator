@@ -5,36 +5,36 @@ import MultiButton from './MultiButton'
 import DecimalButton from './DecimalButton'
 import PlusMinusButton from './PlusMinusButton'
 
-export default function Keypad() {
+export default function Keypad({ update }) {
     return (
         <div className='keypad'>
             <div className='row'>
-                <Button symbol={'1'} />
-                <Button symbol={'2'} />
-                <Button symbol={'3'} />
-                <Button symbol={'÷'} operator />
+                <Button symbol={'1'} update={update} />
+                <Button symbol={'2'} update={update} />
+                <Button symbol={'3'} update={update} />
+                <Button symbol={'÷'} operator update={update} />
             </div>
             <div className='row'>
-                <Button symbol={'4'} />
-                <Button symbol={'5'} />
-                <Button symbol={'6'} />
-                <MultiButton symbol={'*'} />
+                <Button symbol={'4'} update={update} />
+                <Button symbol={'5'} update={update} />
+                <Button symbol={'6'} update={update} />
+                <MultiButton symbol={'*'} update={update} />
             </div>
             <div className='row'>
-                <Button symbol={'7'} />
-                <Button symbol={'8'} />
-                <Button symbol={'9'} />
-                <Button symbol={'+'} operator />
+                <Button symbol={'7'} update={update} />
+                <Button symbol={'8'} update={update} />
+                <Button symbol={'9'} update={update} />
+                <Button symbol={'+'} operator update={update} />
             </div>
             <div className='row'>
-                <Button symbol={'0'} />
-                <DecimalButton symbol={'.'} />
-                <PlusMinusButton symbol={'+/-'} />
-                <Button symbol={'-'} operator />
+                <Button symbol={'0'} update={update} />
+                <DecimalButton symbol={'.'} update={update} />
+                <PlusMinusButton symbol={'+/-'} update={update} />
+                <Button symbol={'-'} operator update={update} />
             </div>
             <div className='row'>
-                <LargeButton />
-                <Button symbol={'='} operator />
+                <LargeButton symbol={'CLEAR'} update={update} />
+                <Button symbol={'='} operator update={update} />
             </div>
         </div>
     )

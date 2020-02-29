@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function LargeButton({ symbol }) {
+export default function LargeButton({ symbol, update }) {
     return (
-        <div className='large-button'>
+        <div className='large-button' onClick={()=> update(symbol)}>
             <div className='large-diamond'>
 
             </div>
