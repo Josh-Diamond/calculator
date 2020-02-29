@@ -15,7 +15,7 @@
   width: 98%;
   height: 98.5%;
   /* background-color: #A71D36; */
-  border: 2px solid #515151;
+  border: 2px solid #515E66;
   /* background-color: white; */
   border-radius: 6px;
 }
@@ -30,14 +30,153 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  /* border: 1px solid red; */
 }
 
 .logo-image {
-  max-width: 50px;
+  max-width: 35px;
 }
 
 .logo-name {
 max-width: 175px;
-padding-bottom: 10px;
+padding-bottom: 5px;
 padding-left: 5px;
+}
+
+.display {
+  height: 75px;
+  width: 100%;
+  border: 2px solid #515E66;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.display-digit {
+  font-size: 4.2rem;
+  margin-top: -11px;
+  margin-right: 5px;
+  font-weight: 300;
+}
+
+.keypad {
+  width: 100%;
+  height: 475px;
+  /* border: 1px solid yellow; */
+  margin-top: 25px;
+  display: flex;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  height: 65px;
+  width: 65px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #515E66;
+}
+
+.diamond {
+  width: 66%;
+  height: 66%;
+  border: 1px solid #515E66;
+  transform: rotate(45deg);
+  background-color: #1A1A1A;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.1rem;
+}
+
+.symbol {
+  transform: rotate(-45deg);
+}
+
+.operator {
+  color: #01894A;
+  font-size: 2.8rem;
+  padding-bottom: 10px;
+}
+
+.multiply {
+  color: #01894A;
+  font-size: 2.8rem;
+  padding-top: 10px;
+  transform: rotate(-45deg);
+}
+
+.decimal {
+  transform: rotate(-45deg);
+  padding-bottom: 21px;
+}
+
+.plus-minus {
+  transform: rotate(-45deg);
+  font-size: 1.41rem;
+  padding-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.large-button {
+  width: 275px;
+  border: 2px solid black;
+  height: 65px;
+  background-color: #515E66;
+  border-radius: 8px;
+}
+
+.large-diamond {
+  width: 15.47%;
+  height: 66%;
+  border: 1px solid #1A1A1A;
+  transform: rotate(45deg);
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #1A1A1A;
+  /* background-color: #515E66; */
+}
+
+.large-diamond-2 {
+  width: 15.47%;
+  height: 66%;
+  border: 1px solid #1A1A1A;
+  transform: rotate(45deg);
+  margin-top: -45px;
+  margin-left: 220px;
+  background-color: #1A1A1A;
+  /* background-color: #515E66; */
+}
+
+.large-rectangle {
+  width: 210px;
+  height: 99%;
+  /* border: 1px solid #1A1A1A; */
+  margin-top: -54px;
+  margin-left: 32px;
+  background-color: #1A1A1A;
+}
+
+.large-button-symbol {
+  color: #00607D;
+  /* color: #01894A; */
+  margin-top: -100px;
+  margin-left: 65px;
+  z-index: 9999999999999;
+  font-size: 2.1rem;
+  letter-spacing: 10px;
 }
