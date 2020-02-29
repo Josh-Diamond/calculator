@@ -82,6 +82,7 @@ padding-left: 5px;
   align-items: center;
   border-radius: 8px;
   background-color: #515E66;
+  cursor: pointer;
 }
 
 .diamond {
@@ -138,6 +139,7 @@ padding-left: 5px;
   height: 65px;
   background-color: #515E66;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .large-diamond {
