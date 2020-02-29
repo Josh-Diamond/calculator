@@ -12,7 +12,7 @@ export default function Keypad({ update }) {
                 <Button symbol={'1'} update={update} />
                 <Button symbol={'2'} update={update} />
                 <Button symbol={'3'} update={update} />
-                <Button symbol={'÷'} operator update={update} />
+                <Button symbol={'/'} operator divison update={update} />
             </div>
             <div className='row'>
                 <Button symbol={'4'} update={update} />
