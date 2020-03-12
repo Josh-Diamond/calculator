@@ -18,6 +18,9 @@
   border: 2px solid #515E66;
   /* background-color: white; */
   border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.75);
 }
 
 .calculator-content {
