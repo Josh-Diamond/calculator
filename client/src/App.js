@@ -20,7 +20,7 @@ function App() {
         <div className='calculator-content'>
           <Logo />
           <Display calc={calc} />
-          <Keypad update={update} />
+          <Keypad update={update} setCalc={setCalc} calc={calc} />
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ import MultiButton from './MultiButton'
 import DecimalButton from './DecimalButton'
 import PlusMinusButton from './PlusMinusButton'
 
-export default function Keypad({ update }) {
+export default function Keypad({ update, calc, setCalc }) {
     return (
         <div className='keypad'>
             <div className='row'>
@@ -29,7 +29,7 @@ export default function Keypad({ update }) {
             <div className='row'>
                 <Button symbol={'0'} update={update} />
                 <DecimalButton symbol={'.'} update={update} />
-                <PlusMinusButton symbol={'+/-'} update={update} />
+                <PlusMinusButton symbol={'+/-'} update={update} calc={calc} setCalc={setCalc} />
                 <Button symbol={'-'} operator update={update} />
             </div>
             <div className='row'>

@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function PlusMinusButton({ symbol, update }) {
+export default function PlusMinusButton({ symbol, update, calc, setCalc }) {
+    const plusMinus = () => {
+        setCalc(calc * -1)
+    }
     return (
-        // onClick={() => update(symbol)} ..took off because broken
-        <div className='button'>
+        <div onClick={plusMinus}  className='button'>
             <div className='diamond'>
                 <h4 className={'plus-minus'}>{symbol}</h4>
             </div>
